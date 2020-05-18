@@ -226,15 +226,52 @@ console.log(checkTwoNumbers(50, 50))
   16)
   
   Write a JavaScript program to check from two given integers, whether one is positive and another one is negative.
-  
+  */
+  function positive_negative(x, y)
+{
+  if ((x < 0 && y > 0) || x > 0 && y < 0) 
+  {
+    return true;
+  }
+  else 
+  {
+    return false;
+  }
+}
+console.log(positive_negative(-1, 1));
+ /*
   17)
   
   Write a JavaScript program to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
-  
+ */ 
+function upper_lower(str) {
+  if (str.length < 3) {
+    return str.toUpperCase();
+  }
+  firstChar = (str.substring(0, 7)).toLowerCase();
+  secondChar = str.substring(7, str.length);  
+  return firstChar + secondChar;
+}
+console.log(upper_lower("YANNICK"));
+console.log(upper_lower("chris"));
+/*
   18)
   
   Write a JavaScript program to compute the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
   
+*/
+  function sumOfTwoInteger(x, y) 
+ {
+  const sumOfNums = x + y;
+  if (sumOfNums >= 50 && sumOfNums <= 80) {
+    return 65;
+  }
+  return 80;
+}
+
+console.log(sumOfTwoInteger(40,80));
+console.log(sumOfTwoInteger(60,30));
+/*
   19)
   
   Convert a number to a string, the contents of which depend on the number's factors.
