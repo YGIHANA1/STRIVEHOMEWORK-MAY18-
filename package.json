@@ -1,0 +1,23 @@
+{
+  "name": "strivehomework-may18-",
+  "version": "6.14.4",
+  "description": "homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YGIHANA1/STRIVEHOMEWORK-MAY18-.git"
+  },
+  "keywords": [
+    "my",
+    "place"
+  ],
+  "author": "Yannick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YGIHANA1/STRIVEHOMEWORK-MAY18-/issues"
+  },
+  "homepage": "https://github.com/YGIHANA1/STRIVEHOMEWORK-MAY18-#readme"
+}

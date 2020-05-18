@@ -106,7 +106,7 @@ function sumTriple (x, y) {
   9)
   Write a JavaScript program to test whether an array of integers of length 2 contains 1 or a 3. 
   */
-  function blam(numbers){
+  function array(numbers){
     for(let i=0;i<numbers.length;i++){
       if((numbers[i] === 1)||(numbers[i]===3)){
         return true;
@@ -114,15 +114,34 @@ function sumTriple (x, y) {
     }
     return false;
   }
-  /*
-  /*10)
+console.log(array([1,3]));
+/*
+10)
   
-  Write a JavaScript program to test whether an array of integers of length 2 does not contain 1 or a 3
-  
+/*Write a JavaScript program to test whether an array of integers of length 2 does not contain 1 or a 3 */
+ 
+  function myNumb(numbers){
+    if (numbers.indexOf(1) != -1 || numbers.indexOf(3) != -1) 
+{
+   return true;
+}
+else{
+  return false;
+}
+  }
+console.log(array([7,8]));
+/*
   11)
   
   Write a JavaScript to find the longest string from a given array of strings.
-  
+  */
+ 
+ function findLongestWord(string) {
+  return string.length;
+}
+findLongestWord("The quick brown fox jumped over the lazy dog");
+console.log(findLongestWord(string))
+/*
   12)
   
   Write a JavaScript program to find the types of a given angle.
@@ -132,19 +151,78 @@ function sumTriple (x, y) {
       Right angle: An 90 degree angle.
       btuse angle: An angle between 90 and 180 degrees.
       Straight angle: A 180 degree angle.
+   */
+ function angleOfType(angle) {
+  if(angle < 90) {
+    return "Acute angle.";
+  }
+  if(angle === 90) {
+    return "Right angle.";
+  }
+  if(angle < 180) {
+    return "Obtuse angle.";
+  }
+  return "Straight angle.";
+}
+
+console.log(angleOfType(45))
+console.log(angleOfType(90))
+console.log(angleOfType(160))
+console.log(angleOfType(180))
+
+/*
   
   13)
   
   Write a JavaScript program to find the index of the greatest element of a given array of integers
+  */ 
   
+ function indexOfMax(arr) {
+  if (arr.length === 0) {
+      return -1;
+  }
+
+  var max = arr[0];
+  var maxIndex = 0;
+
+  for (var i = 1; i < arr.length; i++) {
+      if (arr[i] > max) {
+          maxIndex = i;
+          max = arr[i];
+      }
+  }
+
+  return maxIndex;
+}
+
+/*
   14)
   
   Write a JavaScript program to get the largest even number from an array of integers.
+  */
+ function maxOfEven(arra) {
+
+  arra.sort((x, y) => y - x);
+
+  for (var i = 0; i < arra.length; i++) {
+    if (arra[i] % 2 == 0)
+      return arra[i];
+    }
+  }
+
+console.log(maxOfEven([100, 400, 800]));
+/*
   
   15)
   
   Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.
-  
+*/
+function checkTwoNumbers(x, y) 
+{
+  return ((x == 50 || y == 50) || (x + y == 50));
+}
+console.log(checkTwoNumbers(50, 50))
+/*
   16)
   
   Write a JavaScript program to check from two given integers, whether one is positive and another one is negative.
